@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Trabalho_001</string>
+    <string name="entrar">Entrar</string>
+    <string name="senha">Senha</string>
+    <string name="email">Email</string>
+    <string name="usuario_invalido">Usuário ou senha inválidos</string>
+    <string name="content_description_media">Logo</string>
+    <string name="title">Título</string>
+    <string name="secondary_text">Subtitulo</string>
+    <string name="supporting_text">Descrição</string>
+</resources>
