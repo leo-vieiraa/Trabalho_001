@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Trabalho_001</string>
+    <string name="app_name">Produtos</string>
     <string name="entrar">Entrar</string>
     <string name="senha">Senha</string>
     <string name="email">Email</string>
@@ -8,4 +8,9 @@
     <string name="title">Título</string>
     <string name="secondary_text">Subtitulo</string>
     <string name="supporting_text">Descrição</string>
+    <string name="criar_user">Criar usuário</string>
+    <string name="autenticar">Autenticar</string>
+    <string name="login">Entrar</string>
+    <string name="criar_uma_nova_conta_aqui">Crie uma nova conta</string>
+    <string name="new_user">Novo Usuário</string>
 </resources>

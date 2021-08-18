@@ -12,6 +12,11 @@ import com.example.trabalho_001.databinding.ActivityMainBinding.*
 import com.example.trabalho_001.fragments.ProductFragment
 import com.example.trabalho_001.model.Product
 import com.example.trabalho_001.service.RetrofitBuilder
+import com.example.trabalho_001.utils.replaceView
+import com.example.trabalho_001.view.ContentFragment
+import com.example.trabalho_001.view.MainFragment
+import com.example.trabalho_001.view.SignInFragment
+import com.google.firebase.auth.FirebaseAuth
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -22,16 +27,14 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
 
-        binding = inflate(layoutInflater)
-
-        setContentView(binding.root)
-
-        supportFragmentManager.beginTransaction()
-            .replace(R.id.containerFrame, ProductFragment())
-            .commitNow()
+        if (FirebaseAuth.getInstance().currentUser != null) {
+            replaceView(ContentFragment.newInstance())
+        } else {
+            replaceView(SignInFragment.newInstance())
+        }
 
     }
-
 
 }
